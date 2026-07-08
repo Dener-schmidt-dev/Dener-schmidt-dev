@@ -520,16 +520,48 @@ Homologação, produção, CDN, storage, APIs, monitoramento, publicações e cu
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Analytics
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Dener-schmidt-dev&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dener-schmidt-dev&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=22&pause=1000&color=6366F1&center=true&vCenter=true&width=760&lines=Estat%C3%ADsticas+%E2%80%A2+Contribui%C3%A7%C3%B5es+%E2%80%A2+Linguagens;Evolu%C3%A7%C3%A3o+constante+em+projetos+reais;Construindo%2C+revisando+e+publicando+software" alt="GitHub Analytics animado" />
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com/?user=Dener-schmidt-dev&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=Dener-schmidt-dev&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&custom_title=Status%20do%20GitHub" alt="GitHub Stats"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dener-schmidt-dev&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&custom_title=Linguagens%20mais%20usadas" alt="Top Languages"/>
+
+<br/><br/>
+
+<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Dener-schmidt-dev&theme=tokyo-night&hide_border=true&area=true&custom_title=Atividade%20recente%20no%20GitHub" alt="GitHub Activity Graph"/>
+
+<br/><br/>
+
+<img width="70%" src="https://streak-stats.demolab.com?user=Dener-schmidt-dev&theme=tokyonight&hide_border=true&card_width=700&ring=6366F1&fire=F97316&currStreakLabel=A78BFA" alt="GitHub Streak"/>
+
+</div>
+
+<details>
+<summary><b>📌 Ver cards resumidos</b></summary>
+
+<br/>
+
+<div align="center">
+
+<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Dener-schmidt-dev&theme=tokyonight" alt="Repos por linguagem"/>
+<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Dener-schmidt-dev&theme=tokyonight" alt="Linguagens por commit"/>
+<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Dener-schmidt-dev&theme=tokyonight&utcOffset=-3" alt="Horário produtivo"/>
+
+</div>
+
+</details>
+
+<div align="center">
+
+![GitHub](https://img.shields.io/badge/GitHub-Analytics-181717?style=for-the-badge&logo=github&logoColor=white)
+![Commits](https://img.shields.io/badge/Commits-Contribui%C3%A7%C3%B5es-6366F1?style=for-the-badge)
+![Code](https://img.shields.io/badge/Code-Reviews_%26_Features-22C55E?style=for-the-badge)
+![Deploy](https://img.shields.io/badge/Deploy-Entrega_cont%C3%ADnua-F97316?style=for-the-badge)
 
 </div>
 
