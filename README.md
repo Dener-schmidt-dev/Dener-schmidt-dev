@@ -73,22 +73,71 @@ const dener = {
 ## 🧠 Arquitetura na prática
 
 <details open>
-<summary><b>Fluxo principal que aplico no dia a dia</b></summary>
+<summary><b>✨ Fluxo principal que aplico no dia a dia</b></summary>
+
+<br/>
 
 ```mermaid
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "background": "#0d1117",
+    "primaryColor": "#111827",
+    "primaryTextColor": "#f8fafc",
+    "primaryBorderColor": "#6366f1",
+    "lineColor": "#60a5fa",
+    "secondaryColor": "#020617",
+    "tertiaryColor": "#0f172a",
+    "fontFamily": "Fira Code, Segoe UI, Arial"
+  }
+}}%%
+
 flowchart LR
-    A[Angular V3<br/>BaseList · BaseEdit · ApiService] --> B[ASP.NET Core API<br/>Controllers · DTOs · Auth]
-    B --> C[Service Layer<br/>Regras · Validações · Logs]
-    C --> D[(MongoDB<br/>Índices por filtro real)]
-    C --> E[Redis / Cache]
-    C --> F[AWS S3 + CloudFront]
-    C --> G[Fiscal / ACBr<br/>NF-e · NFS-e · MDF-e]
+    FE["🅰️ Angular V3<br/><small>BaseList · BaseEdit · ApiService</small>"]
+    API["⚙️ ASP.NET Core API<br/><small>Controllers · DTOs · Auth</small>"]
+    SRV["🧩 Service Layer<br/><small>Regras · Validações · Logs</small>"]
+
+    DB[("🍃 MongoDB<br/><small>Índices reais</small>")]
+    CACHE["⚡ Redis / Cache"]
+    CLOUD["☁️ AWS S3 + CloudFront"]
+    FISCAL["📄 Fiscal / ACBr<br/><small>NF-e · NFS-e · MDF-e</small>"]
+
+    FE ==>|"REST / SignalR"| API
+    API ==>|"DTOs"| SRV
+
+    SRV --> DB
+    SRV --> CACHE
+    SRV --> CLOUD
+    SRV --> FISCAL
+
+    classDef front fill:#0f172a,stroke:#38bdf8,color:#e0f2fe,stroke-width:3px;
+    classDef api fill:#111827,stroke:#8b5cf6,color:#ede9fe,stroke-width:3px;
+    classDef service fill:#052e2b,stroke:#22c55e,color:#dcfce7,stroke-width:3px;
+    classDef data fill:#052e16,stroke:#22c55e,color:#bbf7d0,stroke-width:3px;
+    classDef cache fill:#3b0764,stroke:#c084fc,color:#f3e8ff,stroke-width:3px;
+    classDef cloud fill:#431407,stroke:#f97316,color:#ffedd5,stroke-width:3px;
+    classDef fiscal fill:#500724,stroke:#ec4899,color:#fce7f3,stroke-width:3px;
+
+    class FE front;
+    class API api;
+    class SRV service;
+    class DB data;
+    class CACHE cache;
+    class CLOUD cloud;
+    class FISCAL fiscal;
+
+    linkStyle 0 stroke:#38bdf8,stroke-width:3px;
+    linkStyle 1 stroke:#8b5cf6,stroke-width:3px;
+    linkStyle 2 stroke:#22c55e,stroke-width:2px;
+    linkStyle 3 stroke:#c084fc,stroke-width:2px;
+    linkStyle 4 stroke:#f97316,stroke-width:2px;
+    linkStyle 5 stroke:#ec4899,stroke-width:2px;
 ```
 
 </details>
 
 <details>
-<summary><b>Padrões técnicos</b></summary>
+<summary><b>⚙️ Padrões técnicos</b></summary>
 
 <br/>
 
