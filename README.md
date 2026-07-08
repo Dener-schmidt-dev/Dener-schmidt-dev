@@ -165,22 +165,6 @@ flowchart LR
 
 </details>
 
-<details>
-<summary><b>🧠 Checklist técnico que sigo</b></summary>
-
-<br/>
-
-| Checklist | Objetivo |
-|:--|:--|
-| **Raiz do problema** | Corrigir a causa, não apenas o sintoma |
-| **Mínimo impacto** | Evitar mexer em fluxos amplos sem necessidade |
-| **Padrão do projeto** | Reaproveitar métodos, services, componentes e DTOs existentes |
-| **Performance** | Pensar em filtros, índices, payload e volume real de dados |
-| **Regressão** | Validar o fluxo principal e cenários relacionados |
-| **Deploy seguro** | Publicar com rastreabilidade e ambiente correto |
-
-</details>
-
 <div align="center">
 
 ![ERP](https://img.shields.io/badge/ERP-111827?style=flat-square)
@@ -263,22 +247,6 @@ flowchart LR
 
 </details>
 
-<details>
-<summary><b>⚙️ Padrões técnicos</b></summary>
-
-<br/>
-
-| Padrão | Como aplico |
-|:--|:--|
-| **Controller → Service → Repository** | Separação clara de responsabilidades |
-| **DTOs dedicados** | Request/response sem acoplar entidade |
-| **Regra no backend** | Front-end não decide regra crítica |
-| **Componentes base** | Reaproveitamento e consistência visual |
-| **Code review severo** | Foco em regressão, performance e manutenção |
-| **MongoDB consciente** | Índices alinhados aos filtros reais da tela |
-
-</details>
-
 ---
 
 ## 🛠️ Stack principal
@@ -289,18 +257,249 @@ flowchart LR
 
 </div>
 
-<details>
-<summary><b>Ver stack por categoria</b></summary>
+---
+
+## 🧠 Padrões, stack e domínios
+
+<div align="center">
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=22&pause=900&color=22C55E&center=true&vCenter=true&width=860&lines=Clean+Architecture+%E2%80%A2+DTOs+%E2%80%A2+Performance;Menor+impacto+poss%C3%ADvel+%2B+baixo+risco+de+regress%C3%A3o;Stack+enterprise+para+ERP%2C+Fiscal%2C+SaaS+e+Integra%C3%A7%C3%B5es" alt="Padrões técnicos animados" />
+
+<br/><br/>
+
+![Clean Architecture](https://img.shields.io/badge/Clean_Architecture-111827?style=for-the-badge&logo=dependabot&logoColor=22C55E)
+![DTOs](https://img.shields.io/badge/DTOs_Dedicados-111827?style=for-the-badge&logo=json&logoColor=38BDF8)
+![Code Review](https://img.shields.io/badge/Code_Review_Severo-111827?style=for-the-badge&logo=github&logoColor=A78BFA)
+![Performance](https://img.shields.io/badge/Performance-111827?style=for-the-badge&logo=rocket&logoColor=F97316)
+
+</div>
+
+---
+
+<details open>
+<summary><b>✅ Checklist técnico que sigo</b></summary>
 
 <br/>
 
-| Categoria | Tecnologias |
-|:--|:--|
-| **Backend** | .NET 8, ASP.NET Core, C#, REST APIs, gRPC, SignalR, xUnit |
-| **Frontend** | Angular, TypeScript, RxJS, SCSS, Bootstrap, ECharts |
-| **Banco/Cache** | MongoDB, Redis |
-| **Cloud/Deploy** | AWS S3, CloudFront, GitHub Actions |
-| **Domínio** | ERP, Fiscal, ACBr, Mercado Livre, Pagarme, OAuth2 |
+```mermaid
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "background": "#0d1117",
+    "primaryColor": "#111827",
+    "primaryTextColor": "#f8fafc",
+    "primaryBorderColor": "#38bdf8",
+    "lineColor": "#6366f1",
+    "fontFamily": "Fira Code, Segoe UI, Arial"
+  }
+}}%%
+
+flowchart LR
+    A["🔎 Raiz do problema"] --> B["🎯 Menor impacto"]
+    B --> C["🧬 Padrão do projeto"]
+    C --> D["⚡ Performance"]
+    D --> E["🛡️ Regressão"]
+    E --> F["🚀 Deploy seguro"]
+
+    classDef a fill:#082f49,stroke:#38bdf8,color:#e0f2fe,stroke-width:3px;
+    classDef b fill:#1e1b4b,stroke:#8b5cf6,color:#ede9fe,stroke-width:3px;
+    classDef c fill:#052e16,stroke:#22c55e,color:#dcfce7,stroke-width:3px;
+    classDef d fill:#431407,stroke:#f97316,color:#ffedd5,stroke-width:3px;
+    classDef e fill:#450a0a,stroke:#ef4444,color:#fee2e2,stroke-width:3px;
+    classDef f fill:#0f172a,stroke:#facc15,color:#fef9c3,stroke-width:3px;
+
+    class A a;
+    class B b;
+    class C c;
+    class D d;
+    class E e;
+    class F f;
+
+    linkStyle 0 stroke:#38bdf8,stroke-width:3px;
+    linkStyle 1 stroke:#8b5cf6,stroke-width:3px;
+    linkStyle 2 stroke:#22c55e,stroke-width:3px;
+    linkStyle 3 stroke:#f97316,stroke-width:3px;
+    linkStyle 4 stroke:#facc15,stroke-width:3px;
+```
+
+<div align="center">
+
+![Raiz](https://img.shields.io/badge/Raiz_do_problema-corrigir_a_causa-0EA5E9?style=flat-square)
+![Impacto](https://img.shields.io/badge/Menor_impacto-evitar_regress%C3%A3o-8B5CF6?style=flat-square)
+![Padrão](https://img.shields.io/badge/Padr%C3%A3o_do_projeto-reaproveitar-22C55E?style=flat-square)
+![Performance](https://img.shields.io/badge/Performance-filtros_%2B_%C3%ADndices-F97316?style=flat-square)
+![Deploy](https://img.shields.io/badge/Deploy-rastre%C3%A1vel_F0C12?style=flat-square)
+
+</div>
+
+</details>
+
+<details open>
+<summary><b>⚙️ Padrões técnicos</b></summary>
+
+<br/>
+
+<div align="center">
+
+![Controller Service Repository](https://img.shields.io/badge/Controller_%E2%86%92_Service_%E2%86%92_Repository-111827?style=for-the-badge&logo=layers&logoColor=38BDF8)
+![DTO](https://img.shields.io/badge/DTOs_para_request_%26_response-111827?style=for-the-badge&logo=json&logoColor=22C55E)
+![Backend](https://img.shields.io/badge/Regras_de_neg%C3%B3cio_no_backend-111827?style=for-the-badge&logo=dotnet&logoColor=8B5CF6)
+
+![DRY](https://img.shields.io/badge/Componentes_base_reutiliz%C3%A1veis-111827?style=for-the-badge&logo=angular&logoColor=DD0031)
+![Review](https://img.shields.io/badge/Review_com_foco_em_regress%C3%A3o-111827?style=for-the-badge&logo=github&logoColor=FACC15)
+![Mongo](https://img.shields.io/badge/MongoDB_com_%C3%ADndices_reais-111827?style=for-the-badge&logo=mongodb&logoColor=47A248)
+
+</div>
+
+<br/>
+
+<details>
+<summary><b>🔍 Abrir explicação dos padrões</b></summary>
+
+<br/>
+
+- **Controller → Service → Repository:** separo responsabilidade e mantenho cada camada com seu papel.
+- **DTOs dedicados:** evito acoplar entidade de banco diretamente no contrato da API.
+- **Regra no backend:** front-end não decide regra crítica de negócio.
+- **Componentes base:** reaproveito padrões do projeto para reduzir retrabalho e regressão.
+- **Code review severo:** olho impacto, performance, regressão e compatibilidade com fluxos antigos.
+- **MongoDB consciente:** penso em filtros reais, ordenação, paginação e índices antes de escalar a consulta.
+
+</details>
+
+</details>
+
+---
+
+## 🛠️ Stack por categoria
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=dotnet,cs,angular,ts,js,html,css,sass,mongodb,redis,docker,aws,git,github,githubactions,visualstudio,vscode" alt="Stack principal" />
+
+<br/><br/>
+
+![Backend](https://img.shields.io/badge/Backend-.NET_8_%E2%80%A2_ASP.NET_Core_%E2%80%A2_C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![Frontend](https://img.shields.io/badge/Frontend-Angular_%E2%80%A2_TypeScript_%E2%80%A2_RxJS-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![Data](https://img.shields.io/badge/Data-MongoDB_%E2%80%A2_Redis-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Cloud](https://img.shields.io/badge/Cloud-AWS_S3_%E2%80%A2_CloudFront-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+
+</div>
+
+<details>
+<summary><b>📦 Ver detalhes da stack</b></summary>
+
+<br/>
+
+<div align="center">
+
+### Backend
+![.NET 8](https://img.shields.io/badge/.NET_8-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
+![REST APIs](https://img.shields.io/badge/REST_APIs-FF6B35?style=flat-square&logo=swagger&logoColor=white)
+![gRPC](https://img.shields.io/badge/gRPC-244C5D?style=flat-square)
+![SignalR](https://img.shields.io/badge/SignalR-512BD4?style=flat-square)
+![xUnit](https://img.shields.io/badge/xUnit-512BD4?style=flat-square)
+
+### Frontend
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![RxJS](https://img.shields.io/badge/RxJS-B7178C?style=flat-square&logo=reactivex&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=flat-square&logo=sass&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
+![ECharts](https://img.shields.io/badge/ECharts-AA344D?style=flat-square)
+
+### Cloud, Dados e Domínio
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![AWS S3](https://img.shields.io/badge/AWS_S3-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![CloudFront](https://img.shields.io/badge/CloudFront-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
+![ACBr](https://img.shields.io/badge/ACBr-Fiscal-green?style=flat-square)
+![Mercado Livre](https://img.shields.io/badge/Mercado_Livre-FFE600?style=flat-square&logo=mercadopago&logoColor=black)
+![OAuth2](https://img.shields.io/badge/OAuth2-4285F4?style=flat-square&logo=auth0&logoColor=white)
+
+</div>
+
+</details>
+
+---
+
+## 📌 Projetos e domínios
+
+<div align="center">
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=20&pause=1000&color=F97316&center=true&vCenter=true&width=760&lines=Solu%C3%A7%C3%B5es+enterprise+que+conectam+produto%2C+fiscal+e+opera%C3%A7%C3%A3o;ERP+%E2%80%A2+E-commerce+%E2%80%A2+Fiscal+%E2%80%A2+IA+%E2%80%A2+Infra" alt="Projetos e domínios animado" />
+
+</div>
+
+<br/>
+
+<details open>
+<summary><b>🔧 Sistema ERP</b></summary>
+
+<br/>
+
+![ERP](https://img.shields.io/badge/ERP_Platform-6366F1?style=for-the-badge)
+![Vendas](https://img.shields.io/badge/Vendas_%26_PDV-0EA5E9?style=for-the-badge)
+![Financeiro](https://img.shields.io/badge/Financeiro-22C55E?style=for-the-badge)
+![Estoque](https://img.shields.io/badge/Estoque-F97316?style=for-the-badge)
+
+Plataforma de gestão empresarial com módulos de vendas, fiscal, financeiro, estoque, relatórios e rotinas operacionais críticas.
+
+</details>
+
+<details>
+<summary><b>🛒 E-commerce Integrator</b></summary>
+
+<br/>
+
+![Marketplaces](https://img.shields.io/badge/Marketplaces-FFE600?style=for-the-badge&logo=mercadopago&logoColor=black)
+![Pedidos](https://img.shields.io/badge/Pedidos-38BDF8?style=for-the-badge)
+![Estoque](https://img.shields.io/badge/Sincroniza%C3%A7%C3%A3o_de_Estoque-22C55E?style=for-the-badge)
+
+Integrações com marketplaces, sincronização de estoque, pedidos, anúncios e rotinas de atualização entre canais.
+
+</details>
+
+<details>
+<summary><b>📄 Emissão Fiscal</b></summary>
+
+<br/>
+
+![NF-e](https://img.shields.io/badge/NF--e-22C55E?style=for-the-badge)
+![NFS-e](https://img.shields.io/badge/NFS--e-0EA5E9?style=for-the-badge)
+![MDF-e](https://img.shields.io/badge/MDF--e-F97316?style=for-the-badge)
+![ACBr](https://img.shields.io/badge/ACBr-111827?style=for-the-badge)
+
+Integrações fiscais com ACBr, documentos fiscais, certificados digitais, validações e conformidade com regras de emissão.
+
+</details>
+
+<details>
+<summary><b>🤖 Módulos com IA</b></summary>
+
+<br/>
+
+![IA](https://img.shields.io/badge/IA_aplicada-8B5CF6?style=for-the-badge)
+![Produto](https://img.shields.io/badge/Produto-0EA5E9?style=for-the-badge)
+![Insights](https://img.shields.io/badge/Insights-22C55E?style=for-the-badge)
+
+Recursos inteligentes aplicados ao ERP, atendimento, automações, análise de dados e apoio à tomada de decisão.
+
+</details>
+
+<details>
+<summary><b>🚀 Deploy e Infra</b></summary>
+
+<br/>
+
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![AWS S3](https://img.shields.io/badge/AWS_S3-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![CloudFront](https://img.shields.io/badge/CloudFront-F97316?style=for-the-badge&logo=amazonaws&logoColor=white)
+![APIs](https://img.shields.io/badge/APIs-111827?style=for-the-badge)
+
+Homologação, produção, CDN, storage, APIs, monitoramento, publicações e cuidado com ambiente correto.
 
 </details>
 
@@ -333,25 +532,6 @@ flowchart LR
 <img src="https://streak-stats.demolab.com/?user=Dener-schmidt-dev&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
 
 </div>
-
----
-
-## 📌 Projetos e domínios
-
-<details open>
-<summary><b>Áreas onde mais atuo</b></summary>
-
-<br/>
-
-| Projeto/Domínio | O que envolve |
-|:--|:--|
-| 🔧 **Sistema ERP** | Plataforma de gestão empresarial com vendas, fiscal, financeiro e estoque |
-| 🛒 **E-commerce Integrator** | Sincronização com marketplaces, estoque, pedidos e anúncios |
-| 📄 **Emissão Fiscal** | NF-e, NFS-e, MDF-e, integrações ACBr e conformidade fiscal |
-| 🤖 **Módulos com IA** | Recursos inteligentes aplicados ao produto e atendimento |
-| 🚀 **Deploy e Infra** | Homologação, produção, CDN, storage, APIs e monitoramento |
-
-</details>
 
 ---
 
