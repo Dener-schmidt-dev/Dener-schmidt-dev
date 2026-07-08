@@ -58,13 +58,70 @@ const dener = {
 
 <div align="center">
 
-| 🧩 Área | 💼 Experiência |
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&pause=900&color=6366F1&center=true&vCenter=true&width=780&lines=ERP+Enterprise+%E2%80%A2+Fiscal+%E2%80%A2+SaaS+%E2%80%A2+Integra%C3%A7%C3%B5es;Front-end+Angular+%2B+Back-end+.NET+%2B+MongoDB;C%C3%B3digo+com+foco+em+performance+e+baixo+risco" alt="Visão rápida animada" />
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🧩 Produto & Domínio
+
+![ERP Enterprise](https://img.shields.io/badge/ERP_Enterprise-Vendas_%E2%80%A2_Fiscal_%E2%80%A2_Financeiro-6366F1?style=for-the-badge)
+![Fiscal](https://img.shields.io/badge/Fiscal-NF--e_%E2%80%A2_NFS--e_%E2%80%A2_MDF--e-22C55E?style=for-the-badge)
+![E-commerce](https://img.shields.io/badge/E--commerce-Marketplaces_%E2%80%A2_Estoque-F59E0B?style=for-the-badge)
+
+</td>
+<td width="50%" valign="top">
+
+### ⚙️ Engenharia & Entrega
+
+![Backend](https://img.shields.io/badge/Backend-.NET_%E2%80%A2_APIs_%E2%80%A2_Jobs-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![Frontend](https://img.shields.io/badge/Frontend-Angular_%E2%80%A2_TypeScript-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![Deploy](https://img.shields.io/badge/Deploy-GitHub_Actions_%E2%80%A2_AWS-232F3E?style=for-the-badge&logo=githubactions&logoColor=white)
+
+</td>
+</tr>
+</table>
+
+<details open>
+<summary><b>🚀 Resumo executivo</b></summary>
+
+<br/>
+
+| Foco | O que entrego |
 |:--|:--|
-| **ERP Enterprise** | Vendas, financeiro, fiscal, estoque, PDV e relatórios |
-| **Fiscal** | NF-e, NFC-e, NFS-e, MDF-e, CT-e, SPED e ACBr |
-| **Front-end** | Angular, TypeScript, telas CRUD, dashboards e autocompletes |
-| **Back-end** | APIs REST, services, repositories, jobs, MongoDB e integrações |
-| **Infra/Deploy** | GitHub Actions, AWS S3, CloudFront, ambientes de homologação/produção |
+| **ERP Enterprise** | Evolução de módulos críticos: vendas, fiscal, financeiro, estoque, PDV e relatórios |
+| **Fiscal** | Integrações com NF-e, NFC-e, NFS-e, MDF-e, CT-e, SPED, ACBr e certificados |
+| **Front-end** | Angular, TypeScript, telas CRUD, dashboards, autocompletes e componentes reutilizáveis |
+| **Back-end** | APIs REST, services, repositories, jobs, MongoDB, cache e integrações |
+| **Infra/Deploy** | GitHub Actions, AWS S3, CloudFront, homologação, produção e publicação segura |
+
+</details>
+
+<details>
+<summary><b>🎯 Como eu penso uma entrega</b></summary>
+
+<br/>
+
+```txt
+Entender a regra real
+        ↓
+Achar o ponto certo do código
+        ↓
+Reaproveitar padrões existentes
+        ↓
+Implementar com menor impacto possível
+        ↓
+Validar regressão, performance e fluxo principal
+```
+
+</details>
+
+<div align="center">
+
+`ERP` · `Fiscal` · `SaaS` · `.NET` · `Angular` · `MongoDB` · `APIs` · `Deploy` · `Code Review`
 
 </div>
 
