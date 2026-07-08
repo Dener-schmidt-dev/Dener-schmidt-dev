@@ -207,33 +207,27 @@ const dener = {
 
 ## 🏗️ Arquitetura que aplico no dia a dia
 
-```txt
-┌─────────────────────────────────────────────────────────────┐
-│                    Angular / Front-end                      │
-│   BaseList · BaseEdit · BaseReport · ApiService · Utils     │
-└──────────────────────────┬──────────────────────────────────┘
-                           │ REST / SignalR
-┌──────────────────────────▼──────────────────────────────────┐
-│              ASP.NET Core API / Serviços                    │
-│         Controller → Service → Repository → MongoDB         │
-└──────────────────────────┬──────────────────────────────────┘
-                           │
-        ┌──────────────────┼──────────────────┐
-        ▼                  ▼                  ▼
-   ┌─────────┐       ┌───────────┐      ┌────────────┐
-   │  Redis  │       │  AWS S3   │      │  gRPC Svcs │
-   │  Cache  │       │ CloudFront│      │ Background │
-   └─────────┘       └───────────┘      └────────────┘
-```
+<div align="center">
 
-**Padrões que sigo:**
+<img width="100%" src="./assets/architecture-enterprise-animated.svg" alt="Arquitetura Enterprise ERP animada" />
 
-- Separação clara: **Controller → Service → Repository**
-- **DTOs** dedicados para request e response
-- Regras de negócio **sempre no backend**
-- Front-end com **componentes base reutilizáveis**
-- **Code review** com foco em regressão
-- **Índices MongoDB** alinhados aos filtros reais de produção
+</div>
+
+<details>
+  <summary><b>🔎 Ver detalhes dos padrões que aplico</b></summary>
+  <br/>
+
+| Camada | Como aplico no dia a dia |
+|:--|:--|
+| **Front-end Angular** | Telas reutilizáveis com `BaseList`, `BaseEdit`, `BaseReport`, `ApiService`, filtros, dashboards e componentes padronizados. |
+| **API .NET** | Separação por responsabilidade: `Controller → Service → Repository`, validações no backend e DTOs dedicados para entrada/saída. |
+| **Serviços** | Jobs assíncronos, notificações, auditoria, integração fiscal, cache e rotinas de sincronização sem travar o fluxo principal. |
+| **Dados & Performance** | MongoDB com índices alinhados aos filtros reais, Redis para cache e atenção a regressões em telas críticas. |
+| **Integrações** | ACBr, SEFAZ, marketplaces, AWS S3, CloudFront, autenticação, certificados digitais e pipelines de publicação. |
+
+</details>
+
+**Padrões que sigo:** `Clean Architecture` · `DTOs` · `Code Review` · `Performance` · `Baixo risco de regressão` · `Reaproveitamento de componentes`
 
 ---
 
