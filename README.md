@@ -209,7 +209,7 @@ const dener = {
 
 <div align="center">
 
-<img width="100%" src="./assets/architecture-enterprise-animated.svg" alt="Arquitetura Enterprise ERP animada" />
+<img width="100%" src="./assetes/architecture-enterprise-animated.svg" alt="Arquitetura Enterprise ERP animada" />
 
 </div>
 
